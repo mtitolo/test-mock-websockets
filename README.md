@@ -1,6 +1,6 @@
 ```
 npm install
-node start src/server.js
+node src/server.js
 npm test
 ```
 
