@@ -1,0 +1,50 @@
+{
+  "name": "test-mock-websockets",
+  "version": "0.0.1",
+  "description": "Test the websockets with ES5",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha tests/websocket_test.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1,
+      "semi": [
+        "error",
+        "never"
+      ]
+    },
+    "exclude": [
+      "build",
+      "node_modules",
+      "tests"
+    ]
+  },
+  "repository": "test-mock-websockets",
+  "author": "Michele Titolo <github@michele.io>",
+  "license": "Copyright 2017",
+  "dependencies": {
+    "async": "^2.4.0",
+    "body-parser": "^1.17.2",
+    "compression": "^1.5.2",
+    "express": "^4.13.3",
+    "memory-cache": "^0.2.0",
+    "morgan": "^1.8.0",
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2",
+    "mock-socket": "^7.0.0"
+  }
+}
